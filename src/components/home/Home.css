@@ -1,0 +1,144 @@
+.container{
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.section{
+  padding: 6rem 0.2 ;
+}
+
+.home{
+
+  .homeContainer{
+
+    .introText{
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .title{
+      font-size: 3rem;
+      font-weight: 600;
+      padding: .7rem 0;
+      letter-spacing: 2px;
+    }
+
+    .titleName{
+      font-family: "Aref Ruqaa Ink", serif;
+    }
+
+    .homePara{
+      font-size: 1.3rem;
+      padding: .6rem 1rem;
+      padding: 1rem 0;
+      max-width: 600px;
+    }
+
+    .iconHover{
+      font-size: 42px ;
+      cursor: pointer;
+      gap: 1rem;
+      color:white ;
+    }
+
+    .iconHover:hover{
+      color: var(--spanColor);
+    }
+
+  }
+}
+
+@media screen and (min-width: 320px){
+  .title {
+    font-size: 2rem !important;
+  }
+
+  .icon{
+    font-size: 35px !important;
+  }
+
+  span{
+    font-size: 30px !important;
+  }
+}
+
+
+@media screen and (min-width:480px) {
+  .home{
+    .homeContainer{
+      padding: 0rem 1.5rem;
+
+      .introText{
+        font-size: 1.5rem;
+      }
+
+      .title{
+        font-size: 2rem !important;
+      }
+
+      .subTitle{
+        font-size: 2.1rem;
+      }
+
+      .homePara{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:770px) {
+  .home{
+    .homeContainer{
+      padding: 0rem 1.5rem;
+      width: 70%;
+      margin: auto;
+    }
+  }
+}
+
+
+@media screen and (min-width:1240px) {
+  .home{
+    letter-spacing: 4px;
+
+    .homeContainer{
+
+      padding: 2rem;
+
+      .introText{
+        font-size: 1.5rem;
+        letter-spacing: 4px;
+
+      }
+
+      .title{
+        font-size: 3.25rem;
+        letter-spacing: 4px;
+
+      }
+
+      .subTitle{
+        line-height: 2.5rem;
+      }
+
+      .homePara{
+        font-size: 1.50rem;
+
+      }
+
+      .icon{
+        font-size: 41px  !important;
+      }
+
+      
+      .section{
+        padding: 6rem  !important;
+      }
+
+    }
+  }
+}
+

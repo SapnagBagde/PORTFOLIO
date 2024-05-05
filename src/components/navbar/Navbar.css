@@ -1,0 +1,27 @@
+:root{
+  --primary:#7eadfc;
+  --white:#fff;
+}
+
+.navbar-brand{
+  font-size: 52px ;
+  font-weight: normal;
+}
+
+.logo{
+  color: var(--primary);
+}
+
+
+#navbarSupportedContent ul li a{
+  font-family: "Aref Ruqaa Ink", serif;
+
+  font-size: 24px;
+  color:var(--white);
+  cursor: pointer;
+}
+
+#navbarSupportedContent ul li a:hover{
+  color: var(--primary);
+}
+
