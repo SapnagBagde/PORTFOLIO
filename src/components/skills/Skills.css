@@ -1,0 +1,253 @@
+:root{
+  --secondaryColor:#7eadfc;
+  --textColor:#dae4fb;
+}
+
+.skills-title{
+  color: #00338b;
+}
+
+.flex{
+  display: flex;
+  align-content: center;
+}
+
+.grid{
+  display: grid;
+  align-content: center;
+}
+
+
+input , textarea{
+  font-size: 100%;
+}
+
+.section{
+  padding: 4rem 0;
+}
+
+.container{
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+img{
+  height: auto;
+  width: 100%;
+}
+
+.icon{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.skillName{
+  font-size: 16px !important;
+  font-weight: 100 !important;
+}
+
+.skills{
+
+  .skillsContainer{
+    gap: 2rem 0;
+    padding: 1rem 0;
+
+    .skillGroup{
+        .groupTitle{
+          color: var(--textColor);
+
+          .subTitle{
+            display: block;
+            padding: .3rem 0 1rem;
+            color: var(--secondaryColor);
+            font-weight: 600;
+          }
+        }
+
+        .generalSkills{
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          grid-template-columns: repeat(3,1fr);
+          gap: 1rem;
+
+          .singleSkill{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+
+            .iconBox{
+              position: relative;
+              height: 60px;
+              width: 90px;
+              background: #7eadfc;
+              border-radius: 5px;
+              justify-content: center;
+              align-items: center;
+              overflow: hidden;
+              z-index: 500;
+
+              .icon{
+                font-size: 35px !important;
+                z-index: 500;
+              }             
+            }
+
+            .iconBox::before{
+              content: '';
+              height: 0;
+              width: 100%;
+              background: var(--primaryHover);
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              transition: .2s;
+            }
+
+            .iconBox::after{
+              content: '';
+              height: 0;
+              width: 100%;
+              background: var(--BgColor);
+
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              transition: .3s;
+            }
+
+            .iconBox:hover{
+              color: var(--textColor);
+              border: 2px solid var(--secondaryColor);
+
+              .icon{
+                color: var(--white);
+              }  
+            }
+
+            .iconBox:hover::before,
+            .iconBox:hover::after{
+              height: 100%;
+            }
+
+            .skillName{
+              padding-top: .3rem;
+              text-align: center;
+              font-weight: 600;
+              color: var(--white);
+            }
+
+          }
+        }
+    }
+  }
+}
+
+
+
+@media screen and (min-width:320px) {
+  .skills{
+    .iconBox{
+      width: 80px !important;
+    }
+    .title {
+      font-size: 1.2rem !important;
+  }
+  }
+}
+
+
+
+@media screen and (min-width:480px) {
+  .skills{
+    .skillsContainer{
+      .skillGroup{
+        .generalSkills{
+          grid-template-columns: repeat(4,1fr);
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width:640px) {
+  .skills{
+    .skillsContainer{
+      grid-template-columns: repeat(2,1fr);
+      gap: 2rem;
+      align-items: flex-start;
+      margin: auto;
+      justify-content: center;
+
+
+      .skillGroup{
+        .generalSkills{
+          grid-template-columns: repeat(3,1fr);
+        }
+      }
+
+    }
+  }
+}
+
+
+@media screen and (min-width:769px) {
+  .skills{
+    width: 70%;
+    margin: auto;
+
+    .skillsContainer{
+      grid-template-columns: repeat(2,1fr);
+      gap: 2rem;
+      align-items: flex-start;
+
+      .skillGroup{
+        .generalSkills{
+          grid-template-columns: repeat(3,1fr);
+        }
+      }
+
+    }
+    
+  }
+}
+
+
+@media screen and (min-width:1240px) {
+  .skills{
+  
+    .skillsContainer{
+      grid-template-columns: repeat(4,1fr);
+      gap: 2rem;
+      align-items: flex-start;
+
+      .skillGroup{
+        .generalSkills{
+          grid-template-columns: repeat(2,1fr);
+          padding-right: 5rem;
+          row-gap: 1.5rem;
+
+
+          .singleSkill{
+            align-items: flex-start;
+            align-content: flex-start;
+            justify-content: flex-start;
+          }
+
+          .iconBox{
+            width: 90px !important;
+          }
+
+        }
+      }
+    }
+  }
+
+  .section{
+    padding:8rem 0 !important ;
+  }
+}
