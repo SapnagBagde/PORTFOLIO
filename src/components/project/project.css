@@ -11,74 +11,78 @@
     justify-content: space-between;
     grid-template-columns: repeat(1,1fr);
     gap: 2rem;
-  }
-  .singleProject{
-    display: grid;
-    gap: .5rem;
-    padding: 1.5rem 1rem;
-    border-radius: 10px;
-    height: 100%;
-    background: var(--projectColor);
-  }
-  .externalLinks{
-    width: 100%;
-    justify-content: space-between;
-  }
 
+    .singleProject{
+      display: grid;
+      gap: .5rem;
+      padding: 1.5rem 1rem;
+      border-radius: 10px;
+      height: 100%;
+      background: var(--projectColor);
 
-  .githubIcon{
-    a{
-      color: var(--primaryColor);
+      .externalLinks{
+        width: 100%;
+        justify-content: space-between;
+
+        .githubIcon{
+          a{
+            color: var(--primaryColor);
+
+            &:hover{
+              color: var(--primaryHover);
+            }
+          }
+        }
+      }
 
       &:hover{
-        color: var(--primaryHover);
+        transform: translateY(-7px);
+        border-bottom: 2px solid var(--primaryColor);
       }
-    }
-  }
 
-  &:hover{
-    transform: translateY(-7px);
-    border-bottom: 2px solid var(--primaryColor);
+      .imgDiv{
+        height: 150px;
+        width: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      }
+
+      .projectTitle{
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .desc{
+        font-weight: 600;
+        color: var(--white);
+      }
+
+      h3{
+        text-align: justify;
+      }
+
+      .technologies{
+        gap: .5rem;
+        justify-content: flex-end;
+
+        small{
+          color: var(--white);
+        }
+
+      }
+
+    }
+
   }
   
-  .imgDiv{
-    height: 150px;
-    width: auto;
-    border-radius: 5px;
-    overflow: hidden;
-    cursor: pointer;
-
-    img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 5px;
-    }
-  }
-  .projectTitle{
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .desc{
-    font-weight: 600;
-    color: var(--white);
-  }
-
-  h3{
-    text-align: justify;
-  }
-  
-}
-
-
-.technologies{
-  gap: .5rem;
-  justify-content: flex-end;
-
-  small{
-    color: var(--white);
-  }
 }
 
 @media screen  and (min-width:600px){

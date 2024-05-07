@@ -45,7 +45,7 @@ const data = [
   {
     id:3,
     image:img ,
-    github:'https://github.com/SapnagBagde/PORTFOLIO',
+    github:'https://github.com/SapnagBagde/Portfolio',
     title: 'Portfolio',
     desc:'A Personal Portfolio website to showcase all  my details and projects at one place',
     tech1:'Html',
