@@ -8,6 +8,7 @@ import {
 
 import "./contact.css"
 
+
 const Contact = () => {
   return (
     <div 
@@ -44,7 +45,13 @@ const Contact = () => {
           <textarea name='message' placeholder='Enter your message'></textarea>
 
           <button className='formBtn' type='submit' name='submit'>
+          <a  
+            className='text-white'
+            href='mailto:sapnagbagde@gmail.com'
+            target='_blank'>
             Send Message
+            </a>
+            
           </button>
 
         </motion.form>
